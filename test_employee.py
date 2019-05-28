@@ -4,13 +4,13 @@ from employee import Employee
 
 class TestEmployee(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(cls):
-        print('setupClass')
+    # @classmethod
+    # def setUpClass(cls):
+    #     print('setupClass')
 
-    @classmethod
-    def tearDownClass(cls):
-        print('teardownClass')
+    # @classmethod
+    # def tearDownClass(cls):
+    #     print('teardownClass')
 
     def setUp(self):
         print('setUp')
@@ -33,7 +33,7 @@ class TestEmployee(unittest.TestCase):
 
     def test_fullname(self):
         print('test_fullname')
-        self.assertEqual(self.emp_1.fullname, 'Corey Buluma')
+        self.assertEqual(self.emp_1.fullname, 'Albert Buluma')
         self.assertEqual(self.emp_2.fullname, 'Sue Smith')
 
         self.emp_1.first = 'John'
